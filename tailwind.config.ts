@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        water: {
+          clean: "hsl(var(--water-clean))",
+          contaminated: "hsl(var(--water-contaminated))",
+          testing: "hsl(var(--water-testing))",
+        },
+        alert: {
+          low: "hsl(var(--alert-low))",
+          medium: "hsl(var(--alert-medium))",
+          high: "hsl(var(--alert-high))",
+          critical: "hsl(var(--alert-critical))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +74,21 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-health': 'var(--gradient-health)',
+        'gradient-water': 'var(--gradient-water)',
+        'gradient-alert': 'var(--gradient-alert)',
+        'gradient-success': 'var(--gradient-success)',
+      },
+      boxShadow: {
+        'health': 'var(--shadow-health)',
+        'alert': 'var(--shadow-alert)',
+        'card': 'var(--shadow-card)',
+      },
+      transitionTimingFunction: {
+        'smooth': 'var(--transition-smooth)',
+        'bounce': 'var(--transition-bounce)',
       },
       keyframes: {
         "accordion-down": {
